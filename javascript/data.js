@@ -17,5 +17,14 @@ const data = [
         generate_picture: "",
         description: "A photo of a hill filled with trees, with a Chinese-style palace building overlooking the hill.In the foreground, at the bottom of the photo, a stone fence borders the foot of the hill along with a Chinese temple-style cabin. The photo is taken at dusk, with a cloudy sky, and the orange rays of the sun reflecting on some of the clouds",
 
+    },
+    {
+        id: 3,
+        title: 'Political images',
+        student: "Nicolas Caron",
+        anchor: "#lien",
+        real_picture: "President_Barack_Obama.jpg",
+        generate_picture: "obama_wc.png",
+        description: "A pictures of Obama who's going on toilet.",
     }
 ]
