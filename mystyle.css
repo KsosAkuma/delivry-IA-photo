@@ -1,3 +1,8 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
 	height: 100vh;
 	display: flex;
@@ -8,21 +13,31 @@ body {
 }
 main {
 	width: 100vw;
-	height: 100%;
+	height: 70vh;
 	display: flex;
 	flex-direction: row;
+	overflow-x: scroll;
+	overflow-y: hidden; /* permet le défilement vertical */
+	scrollbar-width: none; /* cache la barre de défilement pour Firefox */
+	-ms-overflow-style: none; /* cache la barre de défilement pour Edge */
 }
 
-header {
-	height: 15%;
-	text-align: center;
+main::-webkit-scrollbar {
+	display: none; /* cache la barre de défilement pour Chrome et Safari */
 }
+
+header,
 footer {
 	height: 15%;
 	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 section {
 	height: 100%;
+	width: 75vw;
+	margin: 0 0.5em;
 }
 aside {
 	width: 25vw;
@@ -36,7 +51,7 @@ nav {
 	flex-direction: column;
 	justify-content: space-evenly;
 	font-size: 2em;
-	margin-left: 2em;
+	margin: 0 1em 0 2em;
 }
 a {
 	text-decoration: none;
@@ -49,10 +64,47 @@ a.active {
 	color: #ffffff;
 }
 article {
-	width: 75vw;
+	width: calc(100vw - 4em);
+	height: 100%;
+	margin: 2em;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 }
 a:hover {
 	color: #bd3100;
+}
+
+/* Styles pour les diapositives */
+.slide {
+	width: 300vw;
+	height: 75vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	text-align: center;
+}
+/* .slide .active {
+	width: 100vh;
+	height: 100vh;
+} */
+
+.slide img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 1rem;
+}
+
+.slide h2 {
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.slide p {
+	font-size: 1.2rem;
+	line-height: 1.5;
 }
