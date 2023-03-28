@@ -31,7 +31,7 @@ const data = [
         id: 4,
         title: 'IA VS Professional pictures',
         student: "Noa David",
-        anchor: "lien",
+        anchor: "Pro",
         real_picture: "ia_picture.webp",
         generate_picture: "picture_noa.jpg",
         description: "hello... It's me",
