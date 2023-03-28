@@ -22,7 +22,7 @@ const data = [
         id: 3,
         title: 'IA Fails',
         student: "Sami AMRI",
-        anchor: "lien",
+        anchor: "fail",
         real_picture: "ia-fail1.jpg",
         generate_picture: "ia-fail3.jpg",
         description: "IA was asked to transform the pictures into art",
