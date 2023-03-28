@@ -9,13 +9,14 @@ function createSlide({ real_picture, title, description, anchor, generate_pictur
         const article = document.createElement('article')
         switch (i) {
             case 0:
-
+                const imgContainer = document.createElement('div')
+                imgContainer.style.width = '80%'
                 const image = document.createElement('img');
                 image.src = "./asset/" + real_picture;
                 image.alt = description;
                 article.appendChild(titleElement);
-
-                article.appendChild(image);
+                article.appendChild(imgContainer);
+                imgContainer.appendChild(image);
                 break;
             case 1:
                 const descriptionElement = document.createElement('p');
@@ -25,12 +26,16 @@ function createSlide({ real_picture, title, description, anchor, generate_pictur
                 article.appendChild(descriptionElement);
                 break;
             case 2:
+                const imgContainer2 = document.createElement('div')
+                imgContainer2.style.width = '80%'
                 const image2 = document.createElement('img');
                 image2.src = "./asset/" + generate_picture;
                 image2.alt = description;
                 article.appendChild(titleElement);
 
-                article.appendChild(image2);
+                article.appendChild(imgContainer2);
+                imgContainer2.appendChild(image2);
+
                 break;
             default:
                 break;
@@ -47,7 +52,7 @@ function nav_func(obj) {
         if (Object.hasOwnProperty.call(obj, key)) {
             const element = obj[key];
             anchor.text = element.title
-            anchor.href = element.anchor
+            anchor.href = "#" + element.anchor
         }
         nav.appendChild(anchor)
     }
