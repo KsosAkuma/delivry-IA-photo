@@ -17,5 +17,14 @@ const data = [
         real_picture: "President_Barack_Obama.jpg",
         generate_picture: "obama_wc.png",
         description: "A pictures of Obama who's going on toilet.",
+    },
+    {
+        id: 3,
+        title: 'IA Fails',
+        student: "Sami AMRI",
+        anchor: "lien",
+        real_picture: "ia-fail1.jpg",
+        generate_picture: "ia-fail3.jpg",
+        description: "IA was asked to transform the pictures into art",
     }
 ]
