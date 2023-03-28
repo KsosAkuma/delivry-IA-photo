@@ -26,5 +26,14 @@ const data = [
         real_picture: "ia-fail1.jpg",
         generate_picture: "ia-fail3.jpg",
         description: "IA was asked to transform the pictures into art",
+    },
+    {
+        id: 4,
+        title: 'IA VS Professional pictures',
+        student: "Noa David",
+        anchor: "lien",
+        real_picture: "ia_picture.webp",
+        generate_picture: "picture_noa.jpg",
+        description: "hello... It's me",
     }
 ]
