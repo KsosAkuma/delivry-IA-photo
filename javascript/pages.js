@@ -10,7 +10,7 @@ function createSlide({ real_picture, title, description, anchor, generate_pictur
         switch (i) {
             case 0:
                 const imgContainer = document.createElement('div')
-                imgContainer.style.width = '80%'
+                imgContainer.className = 'imgContainer'
                 const image = document.createElement('img');
                 image.src = "./asset/" + real_picture;
                 image.alt = description;
@@ -27,7 +27,8 @@ function createSlide({ real_picture, title, description, anchor, generate_pictur
                 break;
             case 2:
                 const imgContainer2 = document.createElement('div')
-                imgContainer2.style.width = '80%'
+                imgContainer2.className = 'imgContainer'
+
                 const image2 = document.createElement('img');
                 image2.src = "./asset/" + generate_picture;
                 image2.alt = description;
@@ -83,3 +84,11 @@ for (let i = 0; i < data.length; i++) {
     document.querySelector('main').appendChild(createSlide(data[i]))
 }
 nav_func(data)
+// JavaScript
+const articles = document.querySelectorAll('img');
+
+articles.forEach(article => {
+    article.addEventListener('click', () => {
+        article.parentElement.classList.toggle('active');
+    });
+});

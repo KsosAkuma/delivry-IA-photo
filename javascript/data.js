@@ -26,5 +26,14 @@ const data = [
         real_picture: "ia-fail1.jpg",
         generate_picture: "ia-fail3.jpg",
         description: "IA was asked to transform the pictures into art",
-    }
+    },
+    {
+        id: 5,
+        title: 'Image modification by AI',
+        student: "Corentin Cuyvers",
+        anchor: "Modif",
+        real_picture: "Mont-Jiuhua.jpeg",
+        generate_picture: "Corentin_replace_the_temple_by_a_modern_building.png",
+        description: "AI was asked to transform the image by replacing the old chinese building by a modern interpretation of it.",
+    },
 ]
