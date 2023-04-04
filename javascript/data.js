@@ -25,7 +25,7 @@ const data = [
         anchor: "fail",
         real_picture: "ia-fail1.jpg",
         generate_picture: "ia-fail3.jpg",
-        description: "AI was asked to transform the pictures into art",
+        supermanpicture: "ia-fail2.jpg",
     }, {
         id: 4,
         title: 'AI VS Professional pictures',

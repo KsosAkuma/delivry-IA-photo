@@ -52,7 +52,7 @@ function createSlide({
       }
       slide.appendChild(article);
     }
-  } else if (id == 4) {
+  } else if (id == 4 || 3) {
     for (let i = 0; i < 3; i++) {
       const article = document.createElement("article");
       switch (i) {
