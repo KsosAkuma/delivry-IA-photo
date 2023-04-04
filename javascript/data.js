@@ -20,15 +20,15 @@ const data = [
     },
     {
         id: 3,
-        title: 'IA Fails',
+        title: 'AI Fails',
         student: "Sami AMRI",
         anchor: "fail",
         real_picture: "ia-fail1.jpg",
         generate_picture: "ia-fail3.jpg",
-        description: "IA was asked to transform the pictures into art",
+        description: "AI was asked to transform the pictures into art",
     }, {
         id: 4,
-        title: 'IA VS Professional pictures',
+        title: 'AI VS Professional pictures',
         student: "Noa David",
         anchor: "Pro",
         real_picture: "ia_picture.webp",
