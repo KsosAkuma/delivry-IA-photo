@@ -1,47 +1,88 @@
-function createSlide({ real_picture, title, description, anchor, generate_picture }) {
+function createSlide({ real_picture, title, description, anchor, generate_picture, id }) {
     const slide = document.createElement('section');
     slide.classList.add('slide');
     slide.id = anchor;
     const titleElement = document.createElement('h2');
     titleElement.innerText = title;
     slide.appendChild(titleElement);
-    for (let i = 0; i < 3; i++) {
-        const article = document.createElement('article')
-        switch (i) {
-            case 0:
-                const imgContainer = document.createElement('div')
-                imgContainer.className = 'imgContainer'
-                const image = document.createElement('img');
-                image.src = "./asset/" + real_picture;
-                image.alt = description;
-                article.appendChild(titleElement);
-                article.appendChild(imgContainer);
-                imgContainer.appendChild(image);
-                break;
-            case 1:
-                const descriptionElement = document.createElement('p');
-                descriptionElement.innerText = description;
-                article.appendChild(titleElement);
+    if (id == 1) {
+        for (let i = 0; i < 3; i++) {
+            const article = document.createElement('article')
+            switch (i) {
+                case 1:
+                    const imgContainer = document.createElement('div')
+                    imgContainer.className = 'imgContainer'
+                    const image = document.createElement('img');
+                    image.src = "./asset/" + real_picture;
+                    image.alt = description;
+                    article.appendChild(titleElement);
+                    article.appendChild(imgContainer);
+                    imgContainer.appendChild(image);
+                    break;
+                case 0:
+                    const descriptionElement = document.createElement('p');
+                    descriptionElement.innerText = description;
+                    article.appendChild(titleElement);
 
-                article.appendChild(descriptionElement);
-                break;
-            case 2:
-                const imgContainer2 = document.createElement('div')
-                imgContainer2.className = 'imgContainer'
+                    article.appendChild(descriptionElement);
+                    break;
+                case 2:
+                    const imgContainer2 = document.createElement('div')
+                    imgContainer2.className = 'imgContainer'
 
-                const image2 = document.createElement('img');
-                image2.src = "./asset/" + generate_picture;
-                image2.alt = description;
-                article.appendChild(titleElement);
+                    const image2 = document.createElement('img');
+                    image2.src = "./asset/" + generate_picture;
+                    image2.alt = description;
+                    article.appendChild(titleElement);
 
-                article.appendChild(imgContainer2);
-                imgContainer2.appendChild(image2);
+                    article.appendChild(imgContainer2);
+                    imgContainer2.appendChild(image2);
 
-                break;
-            default:
-                break;
+                    break;
+                default:
+                    break;
+            }
+            slide.appendChild(article)
         }
-        slide.appendChild(article)
+    } else {
+        for (let i = 0; i < 3; i++) {
+            const article = document.createElement('article')
+            switch (i) {
+                case 0:
+                    const imgContainer = document.createElement('div')
+                    imgContainer.className = 'imgContainer'
+                    const image = document.createElement('img');
+                    image.src = "./asset/" + real_picture;
+                    image.alt = description;
+                    article.appendChild(titleElement);
+                    article.appendChild(imgContainer);
+                    imgContainer.appendChild(image);
+                    break;
+                case 1:
+                    const descriptionElement = document.createElement('p');
+                    descriptionElement.innerText = description;
+                    article.appendChild(titleElement);
+
+                    article.appendChild(descriptionElement);
+                    break;
+                case 2:
+                    const imgContainer2 = document.createElement('div')
+                    imgContainer2.className = 'imgContainer'
+
+                    const image2 = document.createElement('img');
+                    image2.src = "./asset/" + generate_picture;
+                    image2.alt = description;
+                    article.appendChild(titleElement);
+
+                    article.appendChild(imgContainer2);
+                    imgContainer2.appendChild(image2);
+
+                    break;
+                default:
+                    break;
+            }
+            slide.appendChild(article)
+        }
     }
     return slide;
 }
