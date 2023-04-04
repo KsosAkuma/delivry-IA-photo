@@ -33,7 +33,7 @@ const data = [
         anchor: "Pro",
         real_picture: "ia_picture.webp",
         generate_picture: "picture_noa.jpg",
-        description: "hello... It's me",
+        supermanpicture: "ww.jpg",
     },
     {
         id: 5,
